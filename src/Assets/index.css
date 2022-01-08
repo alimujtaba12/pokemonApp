@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+
+/* Heading CSS */
+
+.heading {
+  font-family: "Bangers", cursive;
+  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #1f1235;
+  width: 98%;
+}
+
+/* Card CSS */
+
+.card {
+  margin: 0 auto;
+  position: relative;
+  width: 35%;
+  padding: 3rem;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, .125);
+  box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card:after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: -35px;
+  width: 88px;
+  height: 88px;
+  background: #0cc652;
+  opacity: 0.2;
+  border-radius: 0.5rem;
+  transform: rotate(45deg);
+}
+
+.card:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -35px;
+  width: 88px;
+  height: 88px;
+  background: #0cc652;
+  opacity: 0.2;
+  border-radius: 0.5rem;
+  transform: rotate(45deg);
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card .card-header .arrows-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: #0cc652;
+  color: #fff;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card .card-header .arrows-btn:hover {
+  background: #0cc65269;
+}
+
+.card .card-header .img-thumbnail {
+  padding: .25rem;
+  background-color: #ecf2f5;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-header .avatar-lg {
+  height: 150px;
+  width: 150px;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .card-content .description {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-content h5 {
+  margin: 0;
+  padding-right: 1rem;
+}
+
+
+/* Common CSS */
+
+.text-center {
+  text-align: center;
+}
