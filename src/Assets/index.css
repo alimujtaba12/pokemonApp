@@ -107,7 +107,9 @@ body {
 
 .card .card-content .description {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  word-break: break-all
 }
 
 .card .card-content h5 {
@@ -120,4 +122,12 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 400px) {
+  .heading {
+    width: 94%;
+  }
 }
